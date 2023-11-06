@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cl-icon/css/all.min.css">
+</head>
+<script>
+    function myfun(){
+        var a = document.getElementById("password").value;
+        var b = document.getElementById("retype_password").value;
+        if(a==b){
+            document .getElementById("messages").innerHTML="True";
+        }
+        else{
+            document .getElementById("messages").innerHTML="False";
+        }
+    }
+</script>
+<body style="background-image: url(phx.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+    <ul>
+        <li style="color: rgb(219, 95, 50) "><h1 style="font-size: 50px; font-family:'Times New Roman', Times, serif" >PHEONIX</h1></li>
+        <li style="float: right"><a href="#home">Home</a></li>
+        <li style="float: right"><a href="#about">About us</a></li>
+        <li style="float: right"><a href="#contact">Contact us</a></li>
+    </ul>
+    <div class="wrapper">
+        <form action="" class="form" onsubmit="return myfun()">
+
+            <h1 class="title" style="font-family:'Times New Roman', Times, serif">Login</h1>
+            <div class="inp">
+                <input type="text" name="" id="" class="input" placeholder="Username">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="inp">
+                <input type="email" name="" id="" class="input" placeholder="Email">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="inp">
+                <input type="password" name="" id="password" class="input" placeholder="Password" value="">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="inp">
+                <input type="password" name="" id="retype_password" class="input" placeholder="Confirm Password">
+            </div>
+            <button class="submit" onclick="validate " style="font-family:'Times New Roman', Times, serif">Submit</button>
+           <a class="footer"></a> <a href="#" class="link" style="font-family:'Times New Roman', Times, serif">Terms and conditions</a></p>
+            <div id="msg">
+                <span id="messages"></span>
+            </div>
+
+        </form>
+        <div></div>
+        <div class="banner">
+            <h1 class="wel_text" style="font-family:'Times New Roman', Times, serif">WELCOME</h1>
+            <P class="para" style="font-family:'Times New Roman', Times, serif">Please Sign In here<br/>enter your password</P>
+        </div>
+    </div>
+</body>
+</html>
